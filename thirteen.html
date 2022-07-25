@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="m-5">
+<body class="m-5" id="body">
 
 
   <nav class="navbar fixed-top navbar-expand-lg bg-light">
@@ -28,16 +28,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#body">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Shoes</a>
+            <a class="nav-link" href="#slide">Photos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Back Pack</a>
+            <a class="nav-link" href="#shoes">Shoes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Subscribe</a>
+            <a class="nav-link" href="#bag">Back Pack</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-danger" href="#footer">Subscribe</a>
           </li>
 
       </div>
@@ -50,7 +53,7 @@
   <!-- -------------
   photo slider--
 ---------------- -->
-  <div id="carouselExampleControls" class="carousel slide mt-5 mb-5" data-bs-ride="carousel">
+  <div id="carouselExampleControls slide" class="carousel slide mt-5 mb-5" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item bg-info border rounded active">
 
@@ -119,9 +122,6 @@
           </div>
         </div>
       </div>
-      <!-- img-1 close -->
-
-
 
     </div>
   </div>
@@ -137,8 +137,8 @@
   <!-- ------close banner slid
 ----------------------------- -->
 
-
-  <div class="container overflow-hidden text-center">
+  <!-- for accesories -->
+  <section class="container overflow-hidden text-center">
     <div class="row gx-5">
       <div class="mb-2 col-12 col-sm-12 col-md-6 col-lg-4">
         <div class="p-3 border rounded bg-warning d-flex">
@@ -159,122 +159,209 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
 
 
   <!-- for SHOES-->
 
-  <div class="container">
-    <h1>Shoes</h1>
-    <div class="row">
-      <div class="shadow m-2 p-2 border rounded col-lg-4 col-md-4 col-sm-12 col-12 ">
-        <img class="img-fluid" style="height:20rem;width:30rem" src="./images/shoes/shoe-1.png" alt="">
-        <h2>Supply 350</h2>
-        <h1></h1>
+  <section class="container my-5" id="shoes">
+    <h1 class="text-center m-5 ">Shoes</h1>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 
-        <p>This is a wider card with supporting text below as a natural lead-in to<br> additional content. This content
-          is a little bit longer
 
-        </p>
-        <button class="btn btn-warning" type="button">buy It >></button>
+      <div class="col">
+        <div class="card border border-0 shadow-lg h-100 ">
+          <img class="card-img-top" src="./images/shoes/shoe-1.png" alt="">
+          <div class="card-body">
+            <h2 class="card-tittle">Supply 350</h2>
 
-      </div>
-      <div class=" shadow m-2 p-2 border rounded col-lg-4 col-md-4 col-sm-12 col-12 ">
-        <img class="img-fluid" style="height:20rem;width:32rem" src="./images/shoes/shoe-1.png" alt="">
-        <h2>Supply 350</h2>
-        <h1></h1>
 
-        <p>This is a wider card with supporting text below as a natural lead-in to<br> additional content. This content
-          is a little bit longer
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content
+              is a little bit longer
+            </p>
+          </div>
+          <div class="m-3">
+            <div class="btn btn-warning">BUY NOW</div>
+          </div>
 
-        </p>
-        <button class="btn btn-warning" type="button">buy It >></button>
 
-      </div>
-      <div class="shadow m-2 p-2 border rounded col-lg-4 col-md-4 col-sm-12 col-12 ">
-        <img class="img-fluid" style="height:20rem;width:32rem" src="./images/shoes/shoe-1.png" alt="">
-        <h2>Supply 350</h2>
-        <h1></h1>
 
-        <p>This is a wider card with supporting text below as a natural lead-in to<br> additional content. This content
-          is a little bit longer
-
-        </p>
-        <button class="btn btn-warning" type="button">buy It >></button>
+        </div>
 
       </div>
+      <div class="col">
+        <div class="card border border-0 shadow-lg h-100 ">
+          <img class="card-img-top" src="./images/shoes/shoe-2.png" alt="">
+          <div class="card-body">
+            <h2 class="card-tittle">Supply 307</h2>
+
+
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content
+              is a little bit longer
+            </p>
+          </div>
+          <div class="m-3">
+            <div class="btn btn-warning">BUY NOW</div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="card border border-0 shadow-lg h-100 ">
+          <img class="card-img-top" src="./images/shoes/shoe-3.png" alt="">
+          <div class="card-body">
+            <h2 class="card-tittle">Supply 880</h2>
+
+
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content
+              is a little bit longer
+            </p>
+          </div>
+          <div class="m-3">
+            <div class="btn btn-warning">BUY NOW</div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+      <!-- card-1 -->
+
+
     </div>
-  </div>
+  </section>
 
 
 
   <!-- FOR BAG -->
-  <div class="container">
-    <h1>Back Pack</h1>
-    <div class="row">
-      <div class="shadow m-5 p-5 border rounded col-lg-4 col-md-4 col-sm-12 col-12 ">
-        <img class="" style="height:20rem;width:90%" src="./images/bags/bag-1.png" alt="">
-        <h2>Supply 458</h2>
-        <h1></h1>
+  <section class="container my-5" id="bag">
+    <h1 class="text-center m-5 ">Back Pack</h1>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
 
-        <p>This is a wider card with supporting text below as a natural lead-in to<br> additional content. This content
-          is a little bit longer
+      <!-- bag-1 -->
+      <div class="col">
+        <div class="card border border-0 shadow-lg h-100 ">
+          <img class="card-img-top" src="./images/bags/bag-1.png" alt="">
+          <div class="card-body">
+            <h2 class="card-tittle">Max-3250</h2>
 
-        </p>
-        <button class="btn btn-warning" type="button">buy It >></button>
 
-      </div>
-      <div class=" shadow m-5 p-5 border rounded col-lg-4 col-md-4 col-sm-12 col-12 ">
-        <img class="" style="height:20rem;width:90%" src="./images/bags/bag-2.png" alt="">
-        <h2>Supply 550</h2>
-        <h1></h1>
+            <p class="card-text">This is a wider Bag with supporting text below as a natural lead-in to additional
+              content. This content
+              is a little bit longer
+            </p>
+          </div>
+          <div class="m-3">
+            <div class="btn btn-warning">BUY NOW</div>
+          </div>
 
-        <p>This is a wider card with supporting text below as a natural lead-in to<br> additional content. This content
-          is a little bit longer
 
-        </p>
-        <button class="btn btn-warning" type="button">buy It >></button>
 
-      </div>
-
-      <div class="shadow m-5 p-5 border rounded col-lg-4 col-md-4 col-sm-12 col-12 ">
-        <img class="" style="height:20rem;width:90%" src="./images/bags/bag-1.png" alt="">
-        <h2>Supply 458</h2>
-        <h1></h1>
-
-        <p>This is a wider card with supporting text below as a natural lead-in to<br> additional content. This content
-          is a little bit longer
-
-        </p>
-        <button class="btn btn-warning" type="button">buy It >></button>
+        </div>
 
       </div>
-      <div class="shadow m-5 p-5 border rounded col-lg-4 col-md-4 col-sm-12 col-12 ">
-        <img class="" style="height:20rem;width:90%" src="./images/bags/bag-3.png" alt="">
-        <h2>Supply 350</h2>
-        <h1></h1>
 
-        <p>This is a wider card with supporting text below as a natural lead-in to<br> additional content. This content
-          is a little bit longer
+      <!-- bag-2 -->
+      <div class="col">
+        <div class="card border border-0 shadow-lg h-100 ">
+          <img class="card-img-top" src="./images/bags/bag-2.png" alt="">
+          <div class="card-body">
+            <h2 class="card-tittle">Panda-5640</h2>
 
-        </p>
-        <button class="btn btn-warning" type="button">buy It >></button>
+
+            <p class="card-text">This is a wider bag with supporting text below as a natural lead-in to additional
+              content. This content
+              is a little bit longer
+            </p>
+          </div>
+          <div class="m-3">
+            <div class="btn btn-warning">BUY NOW</div>
+          </div>
+
+
+
+        </div>
 
       </div>
+
+      <!-- bag-3 -->
+      <div class="col">
+        <div class="card border border-0 shadow-lg h-100 ">
+          <img class="card-img-top" src="./images/bags/bag-3.png" alt="">
+          <div class="card-body">
+            <h2 class="card-tittle">Panda-6660</h2>
+
+
+            <p class="card-text">This is a wider bag with supporting text below as a natural lead-in to additional
+              content. This content
+              is a little bit longer
+            </p>
+          </div>
+          <div class="m-3">
+            <div class="btn btn-warning">BUY NOW</div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+      <!-- bag-4 -->
+      <div class="col">
+        <div class="card border border-0 shadow-lg h-100 ">
+          <img class="card-img-top" src="./images/bags/bag-1.png" alt="">
+          <div class="card-body">
+            <h2 class="card-tittle">Panda-6660</h2>
+
+
+            <p class="card-text">This is a wider bag with supporting text below as a natural lead-in to additional
+              content. This content
+              is a little bit longer
+            </p>
+          </div>
+          <div class="m-3">
+            <div class="btn btn-warning">BUY NOW</div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+
 
     </div>
-  </div>
-  <!-- bag -->
-
-  <section class="m-5 ml-5 p-5 d-flex flex-column justify-content-center align-items-center"
-    style="background-color:aquamarine; height:30rem;width:100%">
-    <h1>Cotact Us>></h1>
-    <h3>Mob:01609989...</h3>
-    <h4>G-mail:shasik2022gmail.com</h4>
-
   </section>
 
+  <!-- bag -->
+
+
+
+  <!-- for footer -->
+  <div class="container d-flex justify-content-center align-items-center rounded-5 bg-info" style="height:350px"
+    id="footer">
+    <div>
+      <h2>Let's stay with us</h2>
+      <p> Get update on sales and more</p>
+      <form>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="exampleInputEmail" placeholder="E-mail: Name@gmail.com">
+        </div>
+        <button type="submit" class="btn btn-primary p-2 ">submit</button>
+        <button type="reset" class="btn btn-danger m-4 ">Reset</button>
+      </form>
+    </div>
+  </div>
 
 
 
@@ -284,6 +371,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
+
+  <p class="text-danger shadow-lg m-5 border text-center">@Create by :: SARWAR-ASIK</p>
 </body>
 
 </html>
